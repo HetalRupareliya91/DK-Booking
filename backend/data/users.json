@@ -1,0 +1,56 @@
+[
+  {
+    "id": "users-1",
+    "name": "Aarav Shah",
+    "email": "aarav@example.com",
+    "phone": "9800000001",
+    "city": "Mumbai",
+    "role": "user",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "users-2",
+    "name": "Diya Patel",
+    "email": "diya@example.com",
+    "phone": "9800000002",
+    "city": "Surat",
+    "role": "user",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "users-3",
+    "name": "Kabir Mehta",
+    "email": "kabir@example.com",
+    "phone": "9800000003",
+    "city": "Ahmedabad",
+    "role": "agent",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "users-4",
+    "name": "Isha Rao",
+    "email": "isha@example.com",
+    "phone": "9800000004",
+    "city": "Delhi",
+    "role": "user",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "users-5",
+    "name": "Vihaan Joshi",
+    "email": "vihaan@example.com",
+    "phone": "9800000005",
+    "city": "Bengaluru",
+    "role": "admin",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "users-6",
+    "name": "Anaya Iyer",
+    "email": "anaya@example.com",
+    "phone": "9800000006",
+    "city": "Pune",
+    "role": "user",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
