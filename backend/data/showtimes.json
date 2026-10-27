@@ -1,0 +1,56 @@
+[
+  {
+    "id": "showtimes-1",
+    "movie": "Monsoon Express",
+    "theatre": "Aurora Cinemas",
+    "screen": "Screen 1",
+    "date": "2026-11-05",
+    "price": 199,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "showtimes-2",
+    "movie": "The Last Ticket",
+    "theatre": "Galaxy Multiplex",
+    "screen": "Screen 2",
+    "date": "2026-12-08",
+    "price": 249,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "showtimes-3",
+    "movie": "Golden Hour",
+    "theatre": "Royal Talkies",
+    "screen": "Screen 3",
+    "date": "2026-11-11",
+    "price": 349,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "showtimes-4",
+    "movie": "Silent Waves",
+    "theatre": "Imperial IMAX",
+    "screen": "Screen 4",
+    "date": "2026-12-14",
+    "price": 499,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "showtimes-5",
+    "movie": "City of Lights",
+    "theatre": "Starlight 4DX",
+    "screen": "Screen 5",
+    "date": "2026-11-17",
+    "price": 799,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "showtimes-6",
+    "movie": "Desert Run",
+    "theatre": "Metro Screens",
+    "screen": "Screen 6",
+    "date": "2026-12-20",
+    "price": 999,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
