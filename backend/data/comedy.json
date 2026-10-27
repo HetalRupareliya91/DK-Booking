@@ -1,0 +1,56 @@
+[
+  {
+    "id": "comedy-1",
+    "title": "Monsoon Express Comedy Show",
+    "comedian": "Ravi K",
+    "venue": "NSCI Dome",
+    "date": "2026-11-05",
+    "price": 199,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "comedy-2",
+    "title": "The Last Ticket Comedy Show",
+    "comedian": "Neha S",
+    "venue": "Indoor Stadium",
+    "date": "2026-12-08",
+    "price": 249,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "comedy-3",
+    "title": "Golden Hour Comedy Show",
+    "comedian": "Amit P",
+    "venue": "Town Hall",
+    "date": "2026-11-11",
+    "price": 349,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "comedy-4",
+    "title": "Silent Waves Comedy Show",
+    "comedian": "Sara M",
+    "venue": "Open Air Arena",
+    "date": "2026-12-14",
+    "price": 499,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "comedy-5",
+    "title": "City of Lights Comedy Show",
+    "comedian": "Kunal D",
+    "venue": "Science Centre",
+    "date": "2026-11-17",
+    "price": 799,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "comedy-6",
+    "title": "Desert Run Comedy Show",
+    "comedian": "Priya R",
+    "venue": "City Club",
+    "date": "2026-12-20",
+    "price": 999,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
