@@ -1,0 +1,21 @@
+### List events
+GET http://localhost:5000/api/events?page=1&limit=10
+
+### Search events
+GET http://localhost:5000/api/events?q=Monsoon
+
+### Get one
+GET http://localhost:5000/api/events/events-1
+
+### Create (admin token)
+POST http://localhost:5000/api/events
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "The Last Ticket Event",
+  "category": "Navratri",
+  "city": "Surat",
+  "date": "2026-12-08",
+  "price": 249
+}
