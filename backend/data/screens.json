@@ -1,0 +1,50 @@
+[
+  {
+    "id": "screens-1",
+    "name": "Screen 1",
+    "theatre": "Aurora Cinemas",
+    "format": "2D",
+    "capacity": 120,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "screens-2",
+    "name": "Screen 2",
+    "theatre": "Galaxy Multiplex",
+    "format": "3D",
+    "capacity": 4,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "screens-3",
+    "name": "Screen 3",
+    "theatre": "Royal Talkies",
+    "format": "IMAX",
+    "capacity": 250,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "screens-4",
+    "name": "Screen 4",
+    "theatre": "Imperial IMAX",
+    "format": "4DX",
+    "capacity": 8,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "screens-5",
+    "name": "Screen 5",
+    "theatre": "Starlight 4DX",
+    "format": "Dolby Atmos",
+    "capacity": 60,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "screens-6",
+    "name": "Screen 6",
+    "theatre": "Metro Screens",
+    "format": "2D",
+    "capacity": 300,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
