@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useBanners from '../../hooks/useBanners';
 import { bannerTitle, bannerSummary } from '../../utils/banners';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import BannerMobileCard from '../../components/mobile/BannerMobileCard';
+import '../../styles/mobile/banners.css';
 import '../../styles/modules/banners.css';
 
 export const meta = { path: '/banners', title: 'Banners', panel: 'user', nav: false, icon: '🖼️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/banners', title: 'Banners', panel: 'user', nav: fa
 export default function BannerList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useBanners({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page banners-page">
@@ -20,6 +24,11 @@ export default function BannerList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No banners found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <BannerMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/banners/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function BannerList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
