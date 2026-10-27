@@ -1,0 +1,50 @@
+[
+  {
+    "id": "theatres-1",
+    "name": "Aurora Cinemas",
+    "city": "Mumbai",
+    "address": "Ring Road",
+    "screens": 120,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "theatres-2",
+    "name": "Galaxy Cinemas",
+    "city": "Surat",
+    "address": "MG Road",
+    "screens": 4,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "theatres-3",
+    "name": "Royal Cinemas",
+    "city": "Ahmedabad",
+    "address": "SG Highway",
+    "screens": 250,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "theatres-4",
+    "name": "Imperial Cinemas",
+    "city": "Delhi",
+    "address": "Linking Road",
+    "screens": 8,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "theatres-5",
+    "name": "Starlight Cinemas",
+    "city": "Bengaluru",
+    "address": "Park Street",
+    "screens": 60,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "theatres-6",
+    "name": "Metro Cinemas",
+    "city": "Pune",
+    "address": "FC Road",
+    "screens": 300,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
