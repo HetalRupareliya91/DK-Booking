@@ -1,0 +1,3 @@
+.admin-bookings .page-head small { color: var(--muted); font-weight: 400; }
+.admin-bookings .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-bookings .data-table tbody tr:hover { background: #fafafe; }
