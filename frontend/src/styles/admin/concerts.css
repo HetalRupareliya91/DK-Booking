@@ -1,0 +1,3 @@
+.admin-concerts .page-head small { color: var(--muted); font-weight: 400; }
+.admin-concerts .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-concerts .data-table tbody tr:hover { background: #fafafe; }
