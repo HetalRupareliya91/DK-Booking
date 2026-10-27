@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useRefunds from '../../hooks/useRefunds';
 import { refundTitle, refundSummary } from '../../utils/refunds';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import RefundMobileCard from '../../components/mobile/RefundMobileCard';
+import '../../styles/mobile/refunds.css';
 import '../../styles/modules/refunds.css';
 
 export const meta = { path: '/refunds', title: 'Refunds', panel: 'user', nav: false, icon: '↩️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/refunds', title: 'Refunds', panel: 'user', nav: fa
 export default function RefundList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useRefunds({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page refunds-page">
@@ -20,6 +24,11 @@ export default function RefundList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No refunds found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <RefundMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/refunds/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function RefundList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
