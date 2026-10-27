@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useNotifications from '../../hooks/useNotifications';
 import { notificationTitle, notificationSummary } from '../../utils/notifications';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import NotificationMobileCard from '../../components/mobile/NotificationMobileCard';
+import '../../styles/mobile/notifications.css';
 import '../../styles/modules/notifications.css';
 
 export const meta = { path: '/notifications', title: 'Notifications', panel: 'user', nav: false, icon: '🔔' };
@@ -10,6 +13,7 @@ export const meta = { path: '/notifications', title: 'Notifications', panel: 'us
 export default function NotificationList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useNotifications({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page notifications-page">
@@ -20,6 +24,11 @@ export default function NotificationList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No notifications found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <NotificationMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/notifications/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function NotificationList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
