@@ -1,0 +1,21 @@
+### List users
+GET http://localhost:5000/api/users?page=1&limit=10
+
+### Search users
+GET http://localhost:5000/api/users?q=Aarav
+
+### Get one
+GET http://localhost:5000/api/users/users-1
+
+### Create (admin token)
+POST http://localhost:5000/api/users
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Diya Patel",
+  "email": "diya@example.com",
+  "phone": "9800000002",
+  "city": "Surat",
+  "role": "user"
+}
