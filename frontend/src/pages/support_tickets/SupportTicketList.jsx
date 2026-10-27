@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useSupportTickets from '../../hooks/useSupportTickets';
 import { supportTicketTitle, supportTicketSummary } from '../../utils/support_tickets';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import SupportTicketMobileCard from '../../components/mobile/SupportTicketMobileCard';
+import '../../styles/mobile/support_tickets.css';
 import '../../styles/modules/support_tickets.css';
 
 export const meta = { path: '/support-tickets', title: 'Support Tickets', panel: 'user', nav: false, icon: '🆘' };
@@ -10,6 +13,7 @@ export const meta = { path: '/support-tickets', title: 'Support Tickets', panel:
 export default function SupportTicketList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useSupportTickets({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page support-tickets-page">
@@ -20,6 +24,11 @@ export default function SupportTicketList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No support tickets found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <SupportTicketMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/support-tickets/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function SupportTicketList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
