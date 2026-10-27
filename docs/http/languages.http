@@ -1,0 +1,18 @@
+### List languages
+GET http://localhost:5000/api/languages?page=1&limit=10
+
+### Search languages
+GET http://localhost:5000/api/languages?q=Hindi
+
+### Get one
+GET http://localhost:5000/api/languages/languages-1
+
+### Create (admin token)
+POST http://localhost:5000/api/languages
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "English",
+  "code": "en"
+}
