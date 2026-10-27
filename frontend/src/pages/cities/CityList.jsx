@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useCities from '../../hooks/useCities';
 import { cityTitle, citySummary } from '../../utils/cities';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import CityMobileCard from '../../components/mobile/CityMobileCard';
+import '../../styles/mobile/cities.css';
 import '../../styles/modules/cities.css';
 
 export const meta = { path: '/cities', title: 'Cities', panel: 'user', nav: false, icon: '🏙️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/cities', title: 'Cities', panel: 'user', nav: fals
 export default function CityList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useCities({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page cities-page">
@@ -20,6 +24,11 @@ export default function CityList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No cities found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <CityMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/cities/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function CityList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
