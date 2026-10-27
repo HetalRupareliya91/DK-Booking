@@ -1,0 +1,3 @@
+.admin-movies .page-head small { color: var(--muted); font-weight: 400; }
+.admin-movies .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-movies .data-table tbody tr:hover { background: #fafafe; }
