@@ -3,10 +3,13 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
+const logger = require('./middleware/logger');
+const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(logger);
 
 app.get('/api/health', (req, res) => res.json({ ok: true, service: 'dk-booking-api' }));
 
@@ -18,6 +21,9 @@ if (fs.existsSync(routesDir)) {
     if (mod && mod.path && mod.router) app.use(mod.path, mod.router);
   });
 }
+
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
 
