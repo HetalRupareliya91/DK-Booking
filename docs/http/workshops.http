@@ -1,0 +1,21 @@
+### List workshops
+GET http://localhost:5000/api/workshops?page=1&limit=10
+
+### Search workshops
+GET http://localhost:5000/api/workshops?q=Silent
+
+### Get one
+GET http://localhost:5000/api/workshops/workshops-1
+
+### Create (admin token)
+POST http://localhost:5000/api/workshops
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "City of Lights Workshop",
+  "host": "CodeCamp",
+  "mode": "In-person",
+  "date": "2026-12-08",
+  "price": 249
+}
