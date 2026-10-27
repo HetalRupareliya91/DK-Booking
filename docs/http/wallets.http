@@ -1,0 +1,19 @@
+### List wallets
+GET http://localhost:5000/api/wallets?page=1&limit=10
+
+### Search wallets
+GET http://localhost:5000/api/wallets?q=Aarav
+
+### Get one
+GET http://localhost:5000/api/wallets/wallets-1
+
+### Create (admin token)
+POST http://localhost:5000/api/wallets
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "owner": "Diya Patel",
+  "balance": 249,
+  "currency": "INR"
+}
