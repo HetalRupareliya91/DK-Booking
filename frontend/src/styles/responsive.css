@@ -1,0 +1,25 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  .detail-hero { grid-template-columns: 200px 1fr; }
+  .panel { grid-template-columns: 200px 1fr; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .app-main { padding: 16px 12px 84px; }
+  .search { min-width: 0; width: 100%; }
+  .card-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .card-poster { height: 120px; font-size: 40px; }
+  .detail-hero { grid-template-columns: 1fr; padding: 16px; }
+  .detail-poster { height: 200px; }
+  .detail-list { grid-template-columns: 1fr 1fr; }
+  .panel { grid-template-columns: 1fr; }
+  .panel-side { position: fixed; z-index: 30; left: 0; width: 260px; transform: translateX(-100%); transition: transform .2s; }
+  .panel-side.open { transform: translateX(0); }
+  .panel-top { display: flex; align-items: center; gap: 12px; padding: 12px; background: #1f2533; color: #fff; position: sticky; top: 0; z-index: 20; }
+  .panel-main { padding: 16px 12px; }
+  .data-table thead { display: none; }
+  .data-table tr { display: block; border-bottom: 8px solid var(--bg); }
+  .data-table td { display: flex; justify-content: space-between; white-space: normal; }
+  .data-table td::before { content: attr(data-label); font-weight: 600; color: var(--muted); margin-right: 12px; }
+}
