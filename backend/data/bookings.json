@@ -1,0 +1,62 @@
+[
+  {
+    "id": "bookings-1",
+    "reference": "DKBO-1001",
+    "customer": "Aarav Shah",
+    "show": "Monsoon Express 7PM",
+    "tickets": 120,
+    "amount": 199,
+    "status": "confirmed",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "bookings-2",
+    "reference": "DKBO-1002",
+    "customer": "Diya Patel",
+    "show": "Golden Hour 9PM",
+    "tickets": 4,
+    "amount": 249,
+    "status": "pending",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "bookings-3",
+    "reference": "DKBO-1003",
+    "customer": "Kabir Mehta",
+    "show": "Garba Night",
+    "tickets": 250,
+    "amount": 349,
+    "status": "confirmed",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "bookings-4",
+    "reference": "DKBO-1004",
+    "customer": "Isha Rao",
+    "show": "IPL Final",
+    "tickets": 8,
+    "amount": 499,
+    "status": "cancelled",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "bookings-5",
+    "reference": "DKBO-1005",
+    "customer": "Vihaan Joshi",
+    "show": "Sufi Nights",
+    "tickets": 60,
+    "amount": 799,
+    "status": "confirmed",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "bookings-6",
+    "reference": "DKBO-1006",
+    "customer": "Anaya Iyer",
+    "show": "Comedy Hour",
+    "tickets": 300,
+    "amount": 999,
+    "status": "pending",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
