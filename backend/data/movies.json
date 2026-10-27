@@ -1,0 +1,62 @@
+[
+  {
+    "id": "movies-1",
+    "title": "Monsoon Express",
+    "language": "Hindi",
+    "genre": "Action",
+    "durationMins": 142,
+    "certificate": "U",
+    "price": 199,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "movies-2",
+    "title": "The Last Ticket",
+    "language": "English",
+    "genre": "Drama",
+    "durationMins": 128,
+    "certificate": "UA",
+    "price": 249,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "movies-3",
+    "title": "Golden Hour",
+    "language": "Gujarati",
+    "genre": "Comedy",
+    "durationMins": 155,
+    "certificate": "A",
+    "price": 349,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "movies-4",
+    "title": "Silent Waves",
+    "language": "Tamil",
+    "genre": "Thriller",
+    "durationMins": 117,
+    "certificate": "UA",
+    "price": 499,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "movies-5",
+    "title": "City of Lights",
+    "language": "Telugu",
+    "genre": "Romance",
+    "durationMins": 163,
+    "certificate": "U",
+    "price": 799,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "movies-6",
+    "title": "Desert Run",
+    "language": "Marathi",
+    "genre": "Sci-Fi",
+    "durationMins": 134,
+    "certificate": "UA",
+    "price": 999,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
