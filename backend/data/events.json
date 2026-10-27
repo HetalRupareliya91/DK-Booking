@@ -1,0 +1,56 @@
+[
+  {
+    "id": "events-1",
+    "title": "Monsoon Express Event",
+    "category": "Music",
+    "city": "Mumbai",
+    "date": "2026-11-05",
+    "price": 199,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "events-2",
+    "title": "The Last Ticket Event",
+    "category": "Navratri",
+    "city": "Surat",
+    "date": "2026-12-08",
+    "price": 249,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "events-3",
+    "title": "Golden Hour Event",
+    "category": "Kids",
+    "city": "Ahmedabad",
+    "date": "2026-11-11",
+    "price": 349,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "events-4",
+    "title": "Silent Waves Event",
+    "category": "Food",
+    "city": "Delhi",
+    "date": "2026-12-14",
+    "price": 499,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "events-5",
+    "title": "City of Lights Event",
+    "category": "Standup",
+    "city": "Bengaluru",
+    "date": "2026-11-17",
+    "price": 799,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "events-6",
+    "title": "Desert Run Event",
+    "category": "Exhibition",
+    "city": "Pune",
+    "date": "2026-12-20",
+    "price": 999,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
