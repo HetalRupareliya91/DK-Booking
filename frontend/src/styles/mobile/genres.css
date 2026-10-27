@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .genres-page .page-head h1 { font-size: 20px; }
+  .mobile-list { display: grid; gap: 10px; }
+  .mobile-card { display: flex; gap: 12px; align-items: center; background: var(--card); padding: 10px; border-radius: var(--radius); box-shadow: var(--shadow); }
+  .mobile-card .thumb { width: 64px; height: 64px; flex: none; border-radius: 10px; display: grid; place-items: center; font-size: 28px; background: linear-gradient(135deg, #2b3148, #f84464); }
+  .mobile-card h3 { font-size: 15px; margin: 0 0 4px; }
+  .mobile-card p { font-size: 12px; margin: 0; }
+}
