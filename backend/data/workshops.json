@@ -1,0 +1,56 @@
+[
+  {
+    "id": "workshops-1",
+    "title": "Silent Waves Workshop",
+    "host": "Studio Craft",
+    "mode": "Online",
+    "date": "2026-11-05",
+    "price": 199,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "workshops-2",
+    "title": "City of Lights Workshop",
+    "host": "CodeCamp",
+    "mode": "In-person",
+    "date": "2026-12-08",
+    "price": 249,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "workshops-3",
+    "title": "Desert Run Workshop",
+    "host": "Art House",
+    "mode": "Hybrid",
+    "date": "2026-11-11",
+    "price": 349,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "workshops-4",
+    "title": "Monsoon Express Workshop",
+    "host": "Photo Walks",
+    "mode": "Online",
+    "date": "2026-12-14",
+    "price": 499,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "workshops-5",
+    "title": "The Last Ticket Workshop",
+    "host": "Chef Table",
+    "mode": "In-person",
+    "date": "2026-11-17",
+    "price": 799,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "workshops-6",
+    "title": "Golden Hour Workshop",
+    "host": "Yoga Flow",
+    "mode": "Hybrid",
+    "date": "2026-12-20",
+    "price": 999,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
