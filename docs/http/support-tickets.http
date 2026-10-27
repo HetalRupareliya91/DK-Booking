@@ -1,0 +1,20 @@
+### List support tickets
+GET http://localhost:5000/api/support-tickets?page=1&limit=10
+
+### Search support tickets
+GET http://localhost:5000/api/support-tickets?q=Payment
+
+### Get one
+GET http://localhost:5000/api/support-tickets/support-tickets-1
+
+### Create (admin token)
+POST http://localhost:5000/api/support-tickets
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "subject": "Seat not allotted",
+  "customer": "Diya Patel",
+  "priority": "medium",
+  "status": "pending"
+}
