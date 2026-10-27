@@ -1,0 +1,3 @@
+.admin-sports .page-head small { color: var(--muted); font-weight: 400; }
+.admin-sports .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-sports .data-table tbody tr:hover { background: #fafafe; }
