@@ -1,0 +1,50 @@
+[
+  {
+    "id": "venues-1",
+    "name": "Aurora Arena",
+    "city": "Mumbai",
+    "type": "Stadium",
+    "capacity": 120,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "venues-2",
+    "name": "Galaxy Arena",
+    "city": "Surat",
+    "type": "Auditorium",
+    "capacity": 4,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "venues-3",
+    "name": "Royal Arena",
+    "city": "Ahmedabad",
+    "type": "Club",
+    "capacity": 250,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "venues-4",
+    "name": "Imperial Arena",
+    "city": "Delhi",
+    "type": "Arena",
+    "capacity": 8,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "venues-5",
+    "name": "Starlight Arena",
+    "city": "Bengaluru",
+    "type": "Hall",
+    "capacity": 60,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "venues-6",
+    "name": "Metro Arena",
+    "city": "Pune",
+    "type": "Lawn",
+    "capacity": 300,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
