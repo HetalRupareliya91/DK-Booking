@@ -1,0 +1,21 @@
+### List refunds
+GET http://localhost:5000/api/refunds?page=1&limit=10
+
+### Search refunds
+GET http://localhost:5000/api/refunds?q=DKRE-1001
+
+### Get one
+GET http://localhost:5000/api/refunds/refunds-1
+
+### Create (admin token)
+POST http://localhost:5000/api/refunds
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "reference": "DKRE-1002",
+  "booking": "DKB-1002",
+  "amount": 249,
+  "reason": "Duplicate payment",
+  "status": "pending"
+}
