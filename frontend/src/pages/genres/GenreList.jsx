@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useGenres from '../../hooks/useGenres';
 import { genreTitle, genreSummary } from '../../utils/genres';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import GenreMobileCard from '../../components/mobile/GenreMobileCard';
+import '../../styles/mobile/genres.css';
 import '../../styles/modules/genres.css';
 
 export const meta = { path: '/genres', title: 'Genres', panel: 'user', nav: false, icon: '🎞️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/genres', title: 'Genres', panel: 'user', nav: fals
 export default function GenreList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useGenres({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page genres-page">
@@ -20,6 +24,11 @@ export default function GenreList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No genres found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <GenreMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/genres/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function GenreList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
