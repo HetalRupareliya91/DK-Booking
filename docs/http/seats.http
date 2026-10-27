@@ -1,0 +1,21 @@
+### List seats
+GET http://localhost:5000/api/seats?page=1&limit=10
+
+### Search seats
+GET http://localhost:5000/api/seats?q=A
+
+### Get one
+GET http://localhost:5000/api/seats/seats-1
+
+### Create (admin token)
+POST http://localhost:5000/api/seats
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "row": "A",
+  "number": 2,
+  "category": "Classic",
+  "price": 180,
+  "status": "available"
+}
