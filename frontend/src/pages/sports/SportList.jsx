@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useSports from '../../hooks/useSports';
 import { sportTitle, sportSummary } from '../../utils/sports';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import SportMobileCard from '../../components/mobile/SportMobileCard';
+import '../../styles/mobile/sports.css';
 import '../../styles/modules/sports.css';
 
 export const meta = { path: '/sports', title: 'Sports', panel: 'user', nav: true, icon: '🏏' };
@@ -10,6 +13,7 @@ export const meta = { path: '/sports', title: 'Sports', panel: 'user', nav: true
 export default function SportList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useSports({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page sports-page">
@@ -20,6 +24,11 @@ export default function SportList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No sports found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <SportMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/sports/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function SportList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
