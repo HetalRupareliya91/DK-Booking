@@ -1,0 +1,21 @@
+### List payments
+GET http://localhost:5000/api/payments?page=1&limit=10
+
+### Search payments
+GET http://localhost:5000/api/payments?q=DKPA-1001
+
+### Get one
+GET http://localhost:5000/api/payments/payments-1
+
+### Create (admin token)
+POST http://localhost:5000/api/payments
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "reference": "DKPA-1002",
+  "booking": "DKB-1002",
+  "method": "Card",
+  "amount": 249,
+  "status": "pending"
+}
