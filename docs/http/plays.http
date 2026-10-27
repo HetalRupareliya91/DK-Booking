@@ -1,0 +1,21 @@
+### List plays
+GET http://localhost:5000/api/plays?page=1&limit=10
+
+### Search plays
+GET http://localhost:5000/api/plays?q=Desert
+
+### Get one
+GET http://localhost:5000/api/plays/plays-1
+
+### Create (admin token)
+POST http://localhost:5000/api/plays
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "Monsoon Express Play",
+  "language": "English",
+  "venue": "Indoor Stadium",
+  "date": "2026-12-08",
+  "price": 249
+}
