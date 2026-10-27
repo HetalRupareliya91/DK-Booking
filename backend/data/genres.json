@@ -1,0 +1,38 @@
+[
+  {
+    "id": "genres-1",
+    "name": "Action",
+    "description": "High energy stories",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "genres-2",
+    "name": "Drama",
+    "description": "Emotional journeys",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "genres-3",
+    "name": "Comedy",
+    "description": "Laughs guaranteed",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "genres-4",
+    "name": "Thriller",
+    "description": "Edge of the seat",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "genres-5",
+    "name": "Romance",
+    "description": "Love stories",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "genres-6",
+    "name": "Sci-Fi",
+    "description": "Future worlds",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
