@@ -1,0 +1,50 @@
+[
+  {
+    "id": "reports-1",
+    "title": "The Last Ticket Report",
+    "period": "Jan 2026",
+    "revenue": 199000,
+    "tickets": 120,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "reports-2",
+    "title": "Golden Hour Report",
+    "period": "Feb 2026",
+    "revenue": 249000,
+    "tickets": 4,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "reports-3",
+    "title": "Silent Waves Report",
+    "period": "Mar 2026",
+    "revenue": 349000,
+    "tickets": 250,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "reports-4",
+    "title": "City of Lights Report",
+    "period": "Apr 2026",
+    "revenue": 499000,
+    "tickets": 8,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "reports-5",
+    "title": "Desert Run Report",
+    "period": "May 2026",
+    "revenue": 799000,
+    "tickets": 60,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "reports-6",
+    "title": "Monsoon Express Report",
+    "period": "Jun 2026",
+    "revenue": 999000,
+    "tickets": 300,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
