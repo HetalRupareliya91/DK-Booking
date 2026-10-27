@@ -1,0 +1,38 @@
+[
+  {
+    "id": "languages-1",
+    "name": "Hindi",
+    "code": "hi",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "languages-2",
+    "name": "English",
+    "code": "en",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "languages-3",
+    "name": "Gujarati",
+    "code": "gu",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "languages-4",
+    "name": "Tamil",
+    "code": "ta",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "languages-5",
+    "name": "Telugu",
+    "code": "te",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "languages-6",
+    "name": "Marathi",
+    "code": "mr",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
