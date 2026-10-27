@@ -1,0 +1,56 @@
+[
+  {
+    "id": "agents-1",
+    "name": "Aarav Shah",
+    "email": "aarav@example.com",
+    "agency": "Surat Tickets",
+    "commissionPct": 10,
+    "active": true,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "agents-2",
+    "name": "Diya Patel",
+    "email": "diya@example.com",
+    "agency": "Mumbai Events Co",
+    "commissionPct": 15,
+    "active": true,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "agents-3",
+    "name": "Kabir Mehta",
+    "email": "kabir@example.com",
+    "agency": "Gujarat Travels",
+    "commissionPct": 20,
+    "active": true,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "agents-4",
+    "name": "Isha Rao",
+    "email": "isha@example.com",
+    "agency": "Metro Bookings",
+    "commissionPct": 5,
+    "active": false,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "agents-5",
+    "name": "Vihaan Joshi",
+    "email": "vihaan@example.com",
+    "agency": "City Shows",
+    "commissionPct": 25,
+    "active": true,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "agents-6",
+    "name": "Anaya Iyer",
+    "email": "anaya@example.com",
+    "agency": "Fast Pass",
+    "commissionPct": 12,
+    "active": true,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
