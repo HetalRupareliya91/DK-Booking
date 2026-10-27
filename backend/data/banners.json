@@ -1,0 +1,44 @@
+[
+  {
+    "id": "banners-1",
+    "title": "The Last Ticket Banner",
+    "placement": "Home hero",
+    "active": true,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "banners-2",
+    "title": "Golden Hour Banner",
+    "placement": "Movies top",
+    "active": true,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "banners-3",
+    "title": "Silent Waves Banner",
+    "placement": "Events top",
+    "active": true,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "banners-4",
+    "title": "City of Lights Banner",
+    "placement": "Checkout",
+    "active": false,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "banners-5",
+    "title": "Desert Run Banner",
+    "placement": "Home hero",
+    "active": true,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "banners-6",
+    "title": "Monsoon Express Banner",
+    "placement": "Sports top",
+    "active": true,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
