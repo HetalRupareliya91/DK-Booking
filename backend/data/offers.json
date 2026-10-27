@@ -1,0 +1,50 @@
+[
+  {
+    "id": "offers-1",
+    "title": "Monsoon Express Offer",
+    "bank": "HDFC",
+    "discountPct": 10,
+    "validTill": "2026-11-05",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "offers-2",
+    "title": "The Last Ticket Offer",
+    "bank": "ICICI",
+    "discountPct": 15,
+    "validTill": "2026-12-08",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "offers-3",
+    "title": "Golden Hour Offer",
+    "bank": "SBI",
+    "discountPct": 20,
+    "validTill": "2026-11-11",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "offers-4",
+    "title": "Silent Waves Offer",
+    "bank": "Axis",
+    "discountPct": 5,
+    "validTill": "2026-12-14",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "offers-5",
+    "title": "City of Lights Offer",
+    "bank": "Kotak",
+    "discountPct": 25,
+    "validTill": "2026-11-17",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "offers-6",
+    "title": "Desert Run Offer",
+    "bank": "Yes Bank",
+    "discountPct": 12,
+    "validTill": "2026-12-20",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
