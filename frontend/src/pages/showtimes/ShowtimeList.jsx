@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useShowtimes from '../../hooks/useShowtimes';
 import { showtimeTitle, showtimeSummary } from '../../utils/showtimes';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import ShowtimeMobileCard from '../../components/mobile/ShowtimeMobileCard';
+import '../../styles/mobile/showtimes.css';
 import '../../styles/modules/showtimes.css';
 
 export const meta = { path: '/showtimes', title: 'Showtimes', panel: 'user', nav: false, icon: '⏰' };
@@ -10,6 +13,7 @@ export const meta = { path: '/showtimes', title: 'Showtimes', panel: 'user', nav
 export default function ShowtimeList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useShowtimes({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page showtimes-page">
@@ -20,6 +24,11 @@ export default function ShowtimeList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No showtimes found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <ShowtimeMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/showtimes/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function ShowtimeList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
