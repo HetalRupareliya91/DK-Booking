@@ -1,0 +1,20 @@
+### List theatres
+GET http://localhost:5000/api/theatres?page=1&limit=10
+
+### Search theatres
+GET http://localhost:5000/api/theatres?q=Aurora
+
+### Get one
+GET http://localhost:5000/api/theatres/theatres-1
+
+### Create (admin token)
+POST http://localhost:5000/api/theatres
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Galaxy Cinemas",
+  "city": "Surat",
+  "address": "MG Road",
+  "screens": 4
+}
