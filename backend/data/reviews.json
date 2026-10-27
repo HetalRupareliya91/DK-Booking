@@ -1,0 +1,50 @@
+[
+  {
+    "id": "reviews-1",
+    "author": "Aarav",
+    "target": "Monsoon Express",
+    "stars": 5,
+    "comment": "Loved it!",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "reviews-2",
+    "author": "Diya",
+    "target": "Garba Night",
+    "stars": 4,
+    "comment": "Great experience",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "reviews-3",
+    "author": "Kabir",
+    "target": "IPL Final",
+    "stars": 4,
+    "comment": "Worth the money",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "reviews-4",
+    "author": "Isha",
+    "target": "Golden Hour",
+    "stars": 3,
+    "comment": "Too long",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "reviews-5",
+    "author": "Vihaan",
+    "target": "Sufi Nights",
+    "stars": 5,
+    "comment": "Amazing visuals",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "reviews-6",
+    "author": "Anaya",
+    "target": "Comedy Hour",
+    "stars": 4,
+    "comment": "Will watch again",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
