@@ -1,0 +1,20 @@
+### List reports
+GET http://localhost:5000/api/reports?page=1&limit=10
+
+### Search reports
+GET http://localhost:5000/api/reports?q=The
+
+### Get one
+GET http://localhost:5000/api/reports/reports-1
+
+### Create (admin token)
+POST http://localhost:5000/api/reports
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "Golden Hour Report",
+  "period": "Feb 2026",
+  "revenue": 249000,
+  "tickets": 4
+}
