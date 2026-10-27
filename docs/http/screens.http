@@ -1,0 +1,20 @@
+### List screens
+GET http://localhost:5000/api/screens?page=1&limit=10
+
+### Search screens
+GET http://localhost:5000/api/screens?q=Screen
+
+### Get one
+GET http://localhost:5000/api/screens/screens-1
+
+### Create (admin token)
+POST http://localhost:5000/api/screens
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Screen 2",
+  "theatre": "Galaxy Multiplex",
+  "format": "3D",
+  "capacity": 4
+}
