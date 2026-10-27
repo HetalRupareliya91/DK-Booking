@@ -1,0 +1,7 @@
+.agent-theatres .stats { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.agent-theatres .stat { background: var(--card); padding: 12px 18px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.agent-theatres .stat b { display: block; font-size: 22px; }
+.agent-card .agent-actions { margin-top: 12px; }
+@media (max-width: 768px) {
+  .agent-theatres .card-grid { grid-template-columns: 1fr; }
+}
