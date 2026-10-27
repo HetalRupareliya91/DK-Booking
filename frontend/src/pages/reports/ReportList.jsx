@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useReports from '../../hooks/useReports';
 import { reportTitle, reportSummary } from '../../utils/reports';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import ReportMobileCard from '../../components/mobile/ReportMobileCard';
+import '../../styles/mobile/reports.css';
 import '../../styles/modules/reports.css';
 
 export const meta = { path: '/reports', title: 'Reports', panel: 'user', nav: false, icon: '📊' };
@@ -10,6 +13,7 @@ export const meta = { path: '/reports', title: 'Reports', panel: 'user', nav: fa
 export default function ReportList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useReports({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page reports-page">
@@ -20,6 +24,11 @@ export default function ReportList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No reports found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <ReportMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/reports/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function ReportList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
