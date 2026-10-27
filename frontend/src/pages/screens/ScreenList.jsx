@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useScreens from '../../hooks/useScreens';
 import { screenTitle, screenSummary } from '../../utils/screens';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import ScreenMobileCard from '../../components/mobile/ScreenMobileCard';
+import '../../styles/mobile/screens.css';
 import '../../styles/modules/screens.css';
 
 export const meta = { path: '/screens', title: 'Screens', panel: 'user', nav: false, icon: '🖥️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/screens', title: 'Screens', panel: 'user', nav: fa
 export default function ScreenList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useScreens({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page screens-page">
@@ -20,6 +24,11 @@ export default function ScreenList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No screens found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <ScreenMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/screens/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function ScreenList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
