@@ -1,0 +1,20 @@
+### List notifications
+GET http://localhost:5000/api/notifications?page=1&limit=10
+
+### Search notifications
+GET http://localhost:5000/api/notifications?q=The
+
+### Get one
+GET http://localhost:5000/api/notifications/notifications-1
+
+### Create (admin token)
+POST http://localhost:5000/api/notifications
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "Golden Hour Notification",
+  "channel": "Email",
+  "audience": "Agents",
+  "date": "2026-12-08"
+}
