@@ -1,0 +1,10 @@
+.seat-map { background: var(--card); padding: 24px; border-radius: var(--radius); box-shadow: var(--shadow); overflow-x: auto; text-align: center; }
+.seat-row { display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 8px; }
+.row-label { width: 20px; color: var(--muted); font-size: 12px; }
+.seat { width: 30px; height: 28px; border-radius: 6px 6px 3px 3px; border: 1px solid var(--ok); background: #fff; color: var(--ok); font-size: 11px; cursor: pointer; display: inline-block; }
+.seat.picked { background: var(--ok); color: #fff; }
+.seat.booked { border-color: var(--line); background: var(--line); color: transparent; cursor: not-allowed; }
+.screen { margin-top: 24px; padding-top: 10px; border-top: 4px solid #b3c8f0; color: var(--muted); font-size: 12px; }
+.seat-legend { display: flex; gap: 18px; justify-content: center; margin: 16px 0; font-size: 13px; }
+.seat-legend i { width: 14px; height: 14px; vertical-align: middle; margin-right: 4px; }
+.pay-bar { display: flex; justify-content: space-between; align-items: center; background: var(--card); padding: 14px 20px; border-radius: var(--radius); box-shadow: var(--shadow); }
