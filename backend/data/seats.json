@@ -1,0 +1,542 @@
+[
+  {
+    "id": "seats-1",
+    "row": "A",
+    "number": 1,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-2",
+    "row": "A",
+    "number": 2,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-3",
+    "row": "A",
+    "number": 3,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-4",
+    "row": "A",
+    "number": 4,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-5",
+    "row": "A",
+    "number": 5,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-6",
+    "row": "A",
+    "number": 6,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-7",
+    "row": "A",
+    "number": 7,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-8",
+    "row": "A",
+    "number": 8,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-9",
+    "row": "A",
+    "number": 9,
+    "category": "Classic",
+    "price": 180,
+    "status": "booked",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-10",
+    "row": "A",
+    "number": 10,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-11",
+    "row": "B",
+    "number": 1,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-12",
+    "row": "B",
+    "number": 2,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-13",
+    "row": "B",
+    "number": 3,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-14",
+    "row": "B",
+    "number": 4,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-15",
+    "row": "B",
+    "number": 5,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-16",
+    "row": "B",
+    "number": 6,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-17",
+    "row": "B",
+    "number": 7,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-18",
+    "row": "B",
+    "number": 8,
+    "category": "Classic",
+    "price": 180,
+    "status": "booked",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-19",
+    "row": "B",
+    "number": 9,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-20",
+    "row": "B",
+    "number": 10,
+    "category": "Classic",
+    "price": 180,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-21",
+    "row": "C",
+    "number": 1,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-22",
+    "row": "C",
+    "number": 2,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-23",
+    "row": "C",
+    "number": 3,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-24",
+    "row": "C",
+    "number": 4,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-25",
+    "row": "C",
+    "number": 5,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-26",
+    "row": "C",
+    "number": 6,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-27",
+    "row": "C",
+    "number": 7,
+    "category": "Prime",
+    "price": 250,
+    "status": "booked",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-28",
+    "row": "C",
+    "number": 8,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-29",
+    "row": "C",
+    "number": 9,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-30",
+    "row": "C",
+    "number": 10,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-31",
+    "row": "D",
+    "number": 1,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-32",
+    "row": "D",
+    "number": 2,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-33",
+    "row": "D",
+    "number": 3,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-34",
+    "row": "D",
+    "number": 4,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-35",
+    "row": "D",
+    "number": 5,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-36",
+    "row": "D",
+    "number": 6,
+    "category": "Prime",
+    "price": 250,
+    "status": "booked",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-37",
+    "row": "D",
+    "number": 7,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-38",
+    "row": "D",
+    "number": 8,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-39",
+    "row": "D",
+    "number": 9,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-40",
+    "row": "D",
+    "number": 10,
+    "category": "Prime",
+    "price": 250,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-41",
+    "row": "E",
+    "number": 1,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-42",
+    "row": "E",
+    "number": 2,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-43",
+    "row": "E",
+    "number": 3,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-44",
+    "row": "E",
+    "number": 4,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-45",
+    "row": "E",
+    "number": 5,
+    "category": "Recliner",
+    "price": 450,
+    "status": "booked",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-46",
+    "row": "E",
+    "number": 6,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-47",
+    "row": "E",
+    "number": 7,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-48",
+    "row": "E",
+    "number": 8,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-49",
+    "row": "E",
+    "number": 9,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-50",
+    "row": "E",
+    "number": 10,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-51",
+    "row": "F",
+    "number": 1,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-52",
+    "row": "F",
+    "number": 2,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-53",
+    "row": "F",
+    "number": 3,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-54",
+    "row": "F",
+    "number": 4,
+    "category": "Recliner",
+    "price": 450,
+    "status": "booked",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-55",
+    "row": "F",
+    "number": 5,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-56",
+    "row": "F",
+    "number": 6,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-57",
+    "row": "F",
+    "number": 7,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-58",
+    "row": "F",
+    "number": 8,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-59",
+    "row": "F",
+    "number": 9,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "seats-60",
+    "row": "F",
+    "number": 10,
+    "category": "Recliner",
+    "price": 450,
+    "status": "available",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  }
+]
