@@ -1,0 +1,20 @@
+### List venues
+GET http://localhost:5000/api/venues?page=1&limit=10
+
+### Search venues
+GET http://localhost:5000/api/venues?q=Aurora
+
+### Get one
+GET http://localhost:5000/api/venues/venues-1
+
+### Create (admin token)
+POST http://localhost:5000/api/venues
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Galaxy Arena",
+  "city": "Surat",
+  "type": "Auditorium",
+  "capacity": 4
+}
