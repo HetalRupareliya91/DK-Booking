@@ -1,0 +1,21 @@
+### List showtimes
+GET http://localhost:5000/api/showtimes?page=1&limit=10
+
+### Search showtimes
+GET http://localhost:5000/api/showtimes?q=Monsoon
+
+### Get one
+GET http://localhost:5000/api/showtimes/showtimes-1
+
+### Create (admin token)
+POST http://localhost:5000/api/showtimes
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "movie": "The Last Ticket",
+  "theatre": "Galaxy Multiplex",
+  "screen": "Screen 2",
+  "date": "2026-12-08",
+  "price": 249
+}
