@@ -1,0 +1,22 @@
+### List bookings
+GET http://localhost:5000/api/bookings?page=1&limit=10
+
+### Search bookings
+GET http://localhost:5000/api/bookings?q=DKBO-1001
+
+### Get one
+GET http://localhost:5000/api/bookings/bookings-1
+
+### Create (admin token)
+POST http://localhost:5000/api/bookings
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "reference": "DKBO-1002",
+  "customer": "Diya Patel",
+  "show": "Golden Hour 9PM",
+  "tickets": 4,
+  "amount": 249,
+  "status": "pending"
+}
