@@ -1,0 +1,50 @@
+[
+  {
+    "id": "coupons-1",
+    "code": "DK100",
+    "discountPct": 10,
+    "maxDiscount": 199,
+    "active": true,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "coupons-2",
+    "code": "FIRSTSHOW",
+    "discountPct": 15,
+    "maxDiscount": 249,
+    "active": true,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "coupons-3",
+    "code": "WEEKEND20",
+    "discountPct": 20,
+    "maxDiscount": 349,
+    "active": true,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "coupons-4",
+    "code": "FESTIVE",
+    "discountPct": 5,
+    "maxDiscount": 499,
+    "active": false,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "coupons-5",
+    "code": "STUDENT15",
+    "discountPct": 25,
+    "maxDiscount": 799,
+    "active": true,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "coupons-6",
+    "code": "FAMILY4",
+    "discountPct": 12,
+    "maxDiscount": 999,
+    "active": true,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
