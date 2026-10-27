@@ -1,0 +1,20 @@
+### List offers
+GET http://localhost:5000/api/offers?page=1&limit=10
+
+### Search offers
+GET http://localhost:5000/api/offers?q=Monsoon
+
+### Get one
+GET http://localhost:5000/api/offers/offers-1
+
+### Create (admin token)
+POST http://localhost:5000/api/offers
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "The Last Ticket Offer",
+  "bank": "ICICI",
+  "discountPct": 15,
+  "validTill": "2026-12-08"
+}
