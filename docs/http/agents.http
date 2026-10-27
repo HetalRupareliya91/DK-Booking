@@ -1,0 +1,21 @@
+### List agents
+GET http://localhost:5000/api/agents?page=1&limit=10
+
+### Search agents
+GET http://localhost:5000/api/agents?q=Aarav
+
+### Get one
+GET http://localhost:5000/api/agents/agents-1
+
+### Create (admin token)
+POST http://localhost:5000/api/agents
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Diya Patel",
+  "email": "diya@example.com",
+  "agency": "Mumbai Events Co",
+  "commissionPct": 15,
+  "active": true
+}
