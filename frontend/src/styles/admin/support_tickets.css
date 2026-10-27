@@ -1,0 +1,3 @@
+.admin-support-tickets .page-head small { color: var(--muted); font-weight: 400; }
+.admin-support-tickets .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-support-tickets .data-table tbody tr:hover { background: #fafafe; }
