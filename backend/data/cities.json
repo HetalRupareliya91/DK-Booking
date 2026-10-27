@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cities-1",
+    "name": "Mumbai",
+    "state": "Maharashtra",
+    "active": true,
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "cities-2",
+    "name": "Surat",
+    "state": "Gujarat",
+    "active": true,
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "cities-3",
+    "name": "Ahmedabad",
+    "state": "Gujarat",
+    "active": true,
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "cities-4",
+    "name": "Delhi",
+    "state": "Delhi",
+    "active": false,
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "cities-5",
+    "name": "Bengaluru",
+    "state": "Karnataka",
+    "active": true,
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "cities-6",
+    "name": "Pune",
+    "state": "Maharashtra",
+    "active": true,
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
