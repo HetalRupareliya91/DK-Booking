@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useBookings from '../../hooks/useBookings';
 import { bookingTitle, bookingSummary } from '../../utils/bookings';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import BookingMobileCard from '../../components/mobile/BookingMobileCard';
+import '../../styles/mobile/bookings.css';
 import '../../styles/modules/bookings.css';
 
 export const meta = { path: '/bookings', title: 'Bookings', panel: 'user', nav: false, icon: '🎟️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/bookings', title: 'Bookings', panel: 'user', nav: 
 export default function BookingList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useBookings({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page bookings-page">
@@ -20,6 +24,11 @@ export default function BookingList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No bookings found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <BookingMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/bookings/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function BookingList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
