@@ -1,0 +1,20 @@
+### List reviews
+GET http://localhost:5000/api/reviews?page=1&limit=10
+
+### Search reviews
+GET http://localhost:5000/api/reviews?q=Aarav
+
+### Get one
+GET http://localhost:5000/api/reviews/reviews-1
+
+### Create (admin token)
+POST http://localhost:5000/api/reviews
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "author": "Diya",
+  "target": "Garba Night",
+  "stars": 4,
+  "comment": "Great experience"
+}
