@@ -1,0 +1,18 @@
+### List genres
+GET http://localhost:5000/api/genres?page=1&limit=10
+
+### Search genres
+GET http://localhost:5000/api/genres?q=Action
+
+### Get one
+GET http://localhost:5000/api/genres/genres-1
+
+### Create (admin token)
+POST http://localhost:5000/api/genres
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Drama",
+  "description": "Emotional journeys"
+}
