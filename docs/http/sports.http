@@ -1,0 +1,21 @@
+### List sports
+GET http://localhost:5000/api/sports?page=1&limit=10
+
+### Search sports
+GET http://localhost:5000/api/sports?q=Monsoon
+
+### Get one
+GET http://localhost:5000/api/sports/sports-1
+
+### Create (admin token)
+POST http://localhost:5000/api/sports
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "The Last Ticket Sport",
+  "sport": "Football",
+  "venue": "Indoor Stadium",
+  "date": "2026-12-08",
+  "price": 249
+}
