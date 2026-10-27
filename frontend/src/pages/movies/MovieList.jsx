@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useMovies from '../../hooks/useMovies';
 import { movieTitle, movieSummary } from '../../utils/movies';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import MovieMobileCard from '../../components/mobile/MovieMobileCard';
+import '../../styles/mobile/movies.css';
 import '../../styles/modules/movies.css';
 
 export const meta = { path: '/movies', title: 'Movies', panel: 'user', nav: true, icon: '🎬' };
@@ -10,6 +13,7 @@ export const meta = { path: '/movies', title: 'Movies', panel: 'user', nav: true
 export default function MovieList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useMovies({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page movies-page">
@@ -20,6 +24,11 @@ export default function MovieList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No movies found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <MovieMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/movies/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function MovieList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
