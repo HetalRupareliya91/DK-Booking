@@ -1,0 +1,23 @@
+.navbar { background: #333545; color: #fff; position: sticky; top: 0; z-index: 10; }
+.navbar-top { display: flex; align-items: center; gap: 16px; padding: 12px 24px; max-width: 1240px; margin: 0 auto; }
+.logo { font-size: 22px; font-weight: 800; color: #fff; }
+.logo span { color: var(--brand); margin-left: 2px; }
+.nav-search { flex: 1; max-width: 520px; }
+.city-select { background: transparent; color: #fff; border-color: #555a6e; }
+.city-select option { color: #000; }
+.nav-user { display: flex; align-items: center; gap: 12px; }
+.navbar-links { display: flex; gap: 20px; padding: 8px 24px; background: #22242f; overflow-x: auto; font-size: 14px; }
+.navbar-links a { color: #d0d2db; white-space: nowrap; }
+.navbar-links a.active { color: #fff; font-weight: 700; }
+.tabbar { display: none; }
+
+@media (max-width: 768px) {
+  .navbar-top { padding: 10px 12px; flex-wrap: wrap; gap: 8px; }
+  .nav-search { order: 3; flex-basis: 100%; max-width: none; }
+  .nav-user span { display: none; }
+  .navbar-links { display: none; }
+  .tabbar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 20; background: #fff; border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
+  .tabbar a { flex: 1; display: grid; place-items: center; padding: 8px 0; font-size: 11px; color: var(--muted); }
+  .tabbar a.active { color: var(--brand); font-weight: 700; }
+  .tab-icon { font-size: 20px; }
+}
