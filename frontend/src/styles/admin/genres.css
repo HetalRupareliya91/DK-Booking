@@ -1,0 +1,3 @@
+.admin-genres .page-head small { color: var(--muted); font-weight: 400; }
+.admin-genres .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-genres .data-table tbody tr:hover { background: #fafafe; }
