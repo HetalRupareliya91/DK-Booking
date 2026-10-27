@@ -1,0 +1,3 @@
+.admin-seats .page-head small { color: var(--muted); font-weight: 400; }
+.admin-seats .form-title { grid-column: 1 / -1; margin: 0; }
+.admin-seats .data-table tbody tr:hover { background: #fafafe; }
