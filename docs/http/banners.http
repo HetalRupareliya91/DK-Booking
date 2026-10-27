@@ -1,0 +1,19 @@
+### List banners
+GET http://localhost:5000/api/banners?page=1&limit=10
+
+### Search banners
+GET http://localhost:5000/api/banners?q=The
+
+### Get one
+GET http://localhost:5000/api/banners/banners-1
+
+### Create (admin token)
+POST http://localhost:5000/api/banners
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "Golden Hour Banner",
+  "placement": "Movies top",
+  "active": true
+}
