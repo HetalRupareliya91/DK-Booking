@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useWorkshops from '../../hooks/useWorkshops';
 import { workshopTitle, workshopSummary } from '../../utils/workshops';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import WorkshopMobileCard from '../../components/mobile/WorkshopMobileCard';
+import '../../styles/mobile/workshops.css';
 import '../../styles/modules/workshops.css';
 
 export const meta = { path: '/workshops', title: 'Workshops', panel: 'user', nav: true, icon: '🛠️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/workshops', title: 'Workshops', panel: 'user', nav
 export default function WorkshopList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useWorkshops({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page workshops-page">
@@ -20,6 +24,11 @@ export default function WorkshopList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No workshops found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <WorkshopMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/workshops/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function WorkshopList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
