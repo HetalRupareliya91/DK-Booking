@@ -1,0 +1,20 @@
+### List coupons
+GET http://localhost:5000/api/coupons?page=1&limit=10
+
+### Search coupons
+GET http://localhost:5000/api/coupons?q=DK100
+
+### Get one
+GET http://localhost:5000/api/coupons/coupons-1
+
+### Create (admin token)
+POST http://localhost:5000/api/coupons
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "code": "FIRSTSHOW",
+  "discountPct": 15,
+  "maxDiscount": 249,
+  "active": true
+}
