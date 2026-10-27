@@ -1,0 +1,44 @@
+[
+  {
+    "id": "wallets-1",
+    "owner": "Aarav Shah",
+    "balance": 199,
+    "currency": "INR",
+    "createdAt": "2026-10-01T10:00:00.000Z"
+  },
+  {
+    "id": "wallets-2",
+    "owner": "Diya Patel",
+    "balance": 249,
+    "currency": "INR",
+    "createdAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "wallets-3",
+    "owner": "Kabir Mehta",
+    "balance": 349,
+    "currency": "INR",
+    "createdAt": "2026-10-03T10:00:00.000Z"
+  },
+  {
+    "id": "wallets-4",
+    "owner": "Isha Rao",
+    "balance": 499,
+    "currency": "INR",
+    "createdAt": "2026-10-04T10:00:00.000Z"
+  },
+  {
+    "id": "wallets-5",
+    "owner": "Vihaan Joshi",
+    "balance": 799,
+    "currency": "INR",
+    "createdAt": "2026-10-05T10:00:00.000Z"
+  },
+  {
+    "id": "wallets-6",
+    "owner": "Anaya Iyer",
+    "balance": 999,
+    "currency": "INR",
+    "createdAt": "2026-10-06T10:00:00.000Z"
+  }
+]
