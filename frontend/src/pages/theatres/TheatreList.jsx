@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useTheatres from '../../hooks/useTheatres';
 import { theatreTitle, theatreSummary } from '../../utils/theatres';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import TheatreMobileCard from '../../components/mobile/TheatreMobileCard';
+import '../../styles/mobile/theatres.css';
 import '../../styles/modules/theatres.css';
 
 export const meta = { path: '/theatres', title: 'Theatres', panel: 'user', nav: false, icon: '🏛️' };
@@ -10,6 +13,7 @@ export const meta = { path: '/theatres', title: 'Theatres', panel: 'user', nav: 
 export default function TheatreList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useTheatres({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page theatres-page">
@@ -20,6 +24,11 @@ export default function TheatreList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No theatres found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <TheatreMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/theatres/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function TheatreList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
