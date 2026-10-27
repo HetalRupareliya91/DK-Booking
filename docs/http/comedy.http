@@ -1,0 +1,21 @@
+### List comedy shows
+GET http://localhost:5000/api/comedy?page=1&limit=10
+
+### Search comedy shows
+GET http://localhost:5000/api/comedy?q=Monsoon
+
+### Get one
+GET http://localhost:5000/api/comedy/comedy-1
+
+### Create (admin token)
+POST http://localhost:5000/api/comedy
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "The Last Ticket Comedy Show",
+  "comedian": "Neha S",
+  "venue": "Indoor Stadium",
+  "date": "2026-12-08",
+  "price": 249
+}
