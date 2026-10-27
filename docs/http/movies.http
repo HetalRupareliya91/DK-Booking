@@ -1,0 +1,22 @@
+### List movies
+GET http://localhost:5000/api/movies?page=1&limit=10
+
+### Search movies
+GET http://localhost:5000/api/movies?q=Monsoon
+
+### Get one
+GET http://localhost:5000/api/movies/movies-1
+
+### Create (admin token)
+POST http://localhost:5000/api/movies
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "title": "The Last Ticket",
+  "language": "English",
+  "genre": "Drama",
+  "durationMins": 128,
+  "certificate": "UA",
+  "price": 249
+}
