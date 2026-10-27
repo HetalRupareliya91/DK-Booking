@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import useConcerts from '../../hooks/useConcerts';
 import { concertTitle, concertSummary } from '../../utils/concerts';
 import { Loader, ErrorBox, Empty } from '../../components/ui/State';
+import useIsMobile from '../../hooks/useIsMobile';
+import ConcertMobileCard from '../../components/mobile/ConcertMobileCard';
+import '../../styles/mobile/concerts.css';
 import '../../styles/modules/concerts.css';
 
 export const meta = { path: '/concerts', title: 'Concerts', panel: 'user', nav: true, icon: '🎤' };
@@ -10,6 +13,7 @@ export const meta = { path: '/concerts', title: 'Concerts', panel: 'user', nav: 
 export default function ConcertList() {
   const [q, setQ] = useState('');
   const { items, loading, error } = useConcerts({ q });
+  const isMobile = useIsMobile();
 
   return (
     <section className="page concerts-page">
@@ -20,6 +24,11 @@ export default function ConcertList() {
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
       {!loading && !error && items.length === 0 && <Empty label="No concerts found" />}
+      {isMobile ? (
+        <div className="mobile-list">
+          {items.map(item => <ConcertMobileCard key={item.id} item={item} />)}
+        </div>
+      ) : (
       <div className="card-grid">
         {items.map(item => (
           <Link key={item.id} to={'/concerts/' + item.id} className="card">
@@ -31,6 +40,7 @@ export default function ConcertList() {
           </Link>
         ))}
       </div>
+      )}
     </section>
   );
 }
