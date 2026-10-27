@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react';
 import useSeats from '../../hooks/useSeats';
 import { Loader, ErrorBox } from '../../components/ui/State';
 import { formatINR } from '../../utils/format';
+import useIsMobile from '../../hooks/useIsMobile';
+import '../../styles/mobile/seats.css';
 import '../../styles/modules/seats.css';
 
 export const meta = { path: '/seats', title: 'Select seats', panel: 'user', nav: false, icon: '💺' };
@@ -9,6 +11,7 @@ export const meta = { path: '/seats', title: 'Select seats', panel: 'user', nav:
 export default function SeatList() {
   const { items, loading, error } = useSeats({ limit: 100 });
   const [picked, setPicked] = useState([]);
+  const isMobile = useIsMobile();
 
   const rows = useMemo(() => items.reduce((acc, s) => {
     (acc[s.row] = acc[s.row] || []).push(s);
@@ -23,7 +26,7 @@ export default function SeatList() {
   const total = items.filter(s => picked.includes(s.id)).reduce((sum, s) => sum + Number(s.price || 0), 0);
 
   return (
-    <section className="page seats-page">
+    <section className={'page seats-page' + (isMobile ? ' compact' : '')}>
       <h1>💺 Select your seats</h1>
       {loading && <Loader />}
       {error && <ErrorBox message={error} />}
