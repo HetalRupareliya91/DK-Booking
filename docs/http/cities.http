@@ -1,0 +1,19 @@
+### List cities
+GET http://localhost:5000/api/cities?page=1&limit=10
+
+### Search cities
+GET http://localhost:5000/api/cities?q=Mumbai
+
+### Get one
+GET http://localhost:5000/api/cities/cities-1
+
+### Create (admin token)
+POST http://localhost:5000/api/cities
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Surat",
+  "state": "Gujarat",
+  "active": true
+}
